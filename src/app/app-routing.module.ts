@@ -10,7 +10,7 @@ const appRoutes: Routes = [
   },
   {
     path: 'menu',
-    canActivate: [AuthGuard],
+    // canActivate: [AuthGuard],
     loadChildren: () => import('./menu/menu.module').then( m => m.MenuModule),
   },
 

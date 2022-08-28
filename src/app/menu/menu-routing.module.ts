@@ -16,7 +16,7 @@ const MenuRoutes: Routes = [
             { path: 'kppn', component: KppnComponent},
             {
                 path: 'admin',
-                canActivate: [AdminGuard],
+                // canActivate: [AdminGuard],
                 loadChildren: () => import('./admin/admin.module').then( m => m.AdminModule),
               },
         ]

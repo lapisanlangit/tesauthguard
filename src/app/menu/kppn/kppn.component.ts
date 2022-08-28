@@ -9,6 +9,19 @@ export class KppnComponent implements OnInit {
 
   constructor() { }
 
+  public daftarNama=[
+    {
+      nama:'andi'
+    },
+    {
+      nama:'lili'
+    },
+    {
+      nama:'sasa'
+    },
+    
+  ]
+
   ngOnInit(): void {
   }
 

@@ -1,1 +1,17 @@
 <p>satker works!</p>
+<button (click)="ubahTrue()">Ubah True</button>
+<button (click)="ubahFalse()">Ubah False</button>
+
+<h3 [ngStyle]="{ color:getColor()}" [ngClass]="{backdrop:jikaBenar==true}" *ngIf="jikaBenar; else yanglain">{{strAlert}}</h3>
+<ng-template #yanglain>
+    <h3  [ngStyle]="{ color:getColor()}">isian ini adalah false</h3>
+</ng-template>
+
+
+<p appHighlight> Style me with directive</p>
+<p appBetterHighlight> Style me with better directive</p>
+
+<button (click)="behaviorSubjectContoh()">Contoh Behaviour Subject</button>
+<button (click)="regularSubject()">Contoh Subject</button>
+
+<app-anaksatker></app-anaksatker>

@@ -1,1 +1,18 @@
 <p>dashboard works!</p>
+
+<app-grafik [kendaraan]="kendaraan"></app-grafik>
+
+
+<label for="fname">First name:</label><br>
+<input type="text" id="fname" value="" #serverNameInput><br><br>
+<button (click)="simpan(serverNameInput)">Simpan</button> 
+
+
+<br><br>
+
+<label for="fname">alamat:</label><br>
+<input type="text" id="fname" value="" #serverAlamatInput><br><br>
+<button (click)="simpanAlamat()">Simpan</button> 
+
+<button (click)="ubahKendaraan()">Kendaraan</button>
+<button (click)="ubahKendaraanMotor()">Motor</button>
